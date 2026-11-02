@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Churrascaria Prime – Votorantim, SP</title>
+<meta name="description" content="Churrascaria Prime, no Centro de Votorantim. Carne no ponto por R$ 40 a R$ 60 por pessoa. Chame no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3EADB; --surface:#E9DCC6; --ink:#2A1A15; --muted:#6B5547;
+  --wine:#4A1620; --ember:#D9541E; --onwine:#F3EADB; --line:#CDBB9F;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1A110E; --surface:#251915; --ink:#F3EADB; --muted:#BBA894;
+    --wine:#3A1019; --ember:#EE6A33; --onwine:#F3EADB; --line:#3B2A23;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1A110E; --surface:#251915; --ink:#F3EADB; --muted:#BBA894;
+  --wine:#3A1019; --ember:#EE6A33; --onwine:#F3EADB; --line:#3B2A23;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Work Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+/* Hero */
+.hero{
+  background:
+    repeating-linear-gradient(115deg,rgba(0,0,0,.14) 0 3px,transparent 3px 46px),
+    linear-gradient(160deg,var(--wine) 0%,#2B0B12 100%);
+  color:var(--onwine);padding:56px 0 72px;
+}
+.hero .wrap{display:grid;gap:28px}
+.brand{font-weight:600;font-size:15px;letter-spacing:.02em;opacity:.85}
+.hero h1{
+  font:400 clamp(64px,17vw,168px)/.86 "Abril Fatface",Georgia,serif;margin:0;
+  letter-spacing:-.01em;
+}
+.hero h1 span{display:block;font-size:.34em;line-height:1.1;margin-bottom:.18em;color:var(--ember)}
+.hero p{max-width:34ch;font-size:clamp(18px,2.6vw,22px);margin:0;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.btn{
+  display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;
+  font-weight:600;text-decoration:none;border:2px solid var(--ember);transition:transform .15s
+}
+.btn.main{background:var(--ember);color:#1A0A05}
+.btn.alt{color:var(--onwine)}
+.btn:hover{transform:translateY(-2px)}
+
+/* Info */
+.info{margin-top:-36px}
+.info .wrap{display:grid;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.cell{padding:22px 24px;border-bottom:1px solid var(--line)}
+.cell:last-child{border-bottom:0}
+.cell h2{margin:0 0 4px;font-size:15px;font-weight:600;color:var(--muted)}
+.cell .v{font:400 28px/1.2 "Abril Fatface",Georgia,serif}
+.cell .s{font-size:16px;color:var(--muted);margin:4px 0 0}
+@media(min-width:760px){
+  .info .wrap{grid-template-columns:1fr 1fr 1.5fr 1.1fr}
+  .cell{border-bottom:0;border-right:1px solid var(--line)}
+  .cell:last-child{border-right:0}
+}
+
+/* Sections */
+section.block{padding:72px 0 0}
+.block h2.t{font:400 clamp(32px,6vw,52px)/1.05 "Abril Fatface",Georgia,serif;margin:0 0 18px;max-width:16ch}
+.cols{display:grid;gap:32px}
+@media(min-width:760px){.cols{grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}}
+.cols p{margin:0 0 14px;max-width:58ch}
+.how{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.how address{font-style:normal;font-size:19px;line-height:1.5;margin-bottom:18px}
+.how .btn{border-color:var(--wine);color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .how .btn{border-color:var(--ember)}}
+footer{margin-top:80px;padding:28px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">Votorantim, SP</div>
+    <h1><span>Churrascaria</span>Prime</h1>
+    <p>Carne no ponto, mesa cheia e um preço que cabe no bolso.</p>
+    <div class="cta">
+      <a class="btn main" href="https://wa.me/5515997987951" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn alt" href="#como-chegar">Ver endereço</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="info">
+    <div class="wrap">
+      <div class="cell">
+        <h2>Preço por pessoa</h2>
+        <div class="v">R$ 40 a R$ 60</div>
+      </div>
+      <div class="cell">
+        <h2>Horário</h2>
+        <div class="v">10:30–15:00</div>
+      </div>
+      <div class="cell">
+        <h2>Endereço</h2>
+        <div class="v">R. Albertina Nascimento, 67</div>
+        <p class="s">Centro, Votorantim - SP</p>
+      </div>
+      <div class="cell">
+        <h2>Telefone</h2>
+        <div class="v"><a href="tel:+5515997987951" style="text-decoration:none">(15) 99798-7951</a></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div>
+        <h2 class="t">Churrasco de verdade, no Centro</h2>
+        <p>A Churrascaria Prime fica no Centro de Votorantim e foi feita para quem gosta de comer bem sem gastar demais.</p>
+        <p>Venha almoçar com a família, reunir os amigos ou resolver o jantar do dia. Para saber o que está sendo servido hoje, é só chamar no WhatsApp.</p>
+      </div>
+      <div class="how" id="como-chegar">
+        <h2 class="t" style="font-size:30px;margin-bottom:12px">Como chegar</h2>
+        <address>
+          R. Albertina Nascimento, 67<br>
+          Centro, Votorantim - SP<br>
+          CEP 18110-095
+        </address>
+        <p style="margin:0 0 18px">Aberto das 10:30 às 15:00.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=R.+Albertina+Nascimento%2C+67+-+Centro%2C+Votorantim+-+SP%2C+18110-095" target="_blank" rel="noopener">Abrir no mapa</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2 class="t">Reserve sua mesa</h2>
+      <p style="max-width:52ch;margin:0 0 20px">Mande uma mensagem com o dia, o horário e quantas pessoas vão. A gente responde por lá.</p>
+      <a class="btn main" href="https://wa.me/5515997987951?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Churrascaria%20Prime." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Churrascaria Prime</span>
+    <span>R. Albertina Nascimento, 67 – Centro, Votorantim - SP</span>
+  </div>
+</footer>
+
+</body>
+</html>
